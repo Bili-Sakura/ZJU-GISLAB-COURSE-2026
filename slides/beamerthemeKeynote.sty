@@ -5,7 +5,6 @@
 \RequirePackage{tikzpagenodes}
 \usetikzlibrary{calc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{tcolorbox}
 
 \mode<presentation>
 
@@ -146,18 +145,6 @@
 % Command to set custom footer text (e.g., copyright)
 \newcommand{\setFooter}[1]{%
   \renewcommand{\slidefooter}{#1}%
-}
-
-% Command to add references at bottom left (for use with biblatex)
-\newcommand{\bottomleftrefs}{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=south west, xshift=1pt, yshift=1pt] at (current page.south west) {%
-      \parbox{0.95\linewidth}{
-        \setlength{\bibitemsep}{0pt plus 0.3ex}
-        \printbibliography[heading=none]
-      }
-    };
-  \end{tikzpicture}%
 }
 
 % Command to manually set slide bibliography reference
