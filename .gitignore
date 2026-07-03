@@ -26,9 +26,6 @@ temp/
 *.sav
 *~
 
-# PDF outputs (build locally)
-slides/*.pdf
-
 # OS-specific files
 .DS_Store
 Thumbs.db
